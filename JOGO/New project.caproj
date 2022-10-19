@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2newelmmfgz8b</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1000</width>
+        <height>719</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="fundo" sid="357210219430296">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\fundo2.png" />
+        </object-type>
+        <object-type name="Mouse" sid="693512390807899">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="797909446109133">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="musica" sid="881817914985717">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Jack" sid="815261018099579">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="826203022796321">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="290614370429949">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="328424906304750" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="528386601464470" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="explicação" sid="297111818459138">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="botao" sid="201232534381927">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875765314687844" speed="5">
+                    <frame duration="1" hotspotX="0.47181" hotspotY="-0.0265957" original-source="C:\Users\amanda.ilucrecio\Desktop\unnamed.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.47181" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.388298" />
+                            <point x="0.47181" y="0.819149" />
+                            <point x="0.0148368" y="0.218085" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="letreiro" sid="397198020774291">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="chao" sid="896586394907899">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="884454026434972">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="438703677846232" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p1" sid="289764157685286">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802038026325540" speed="5">
+                    <frame duration="1" hotspotX="0.501155" hotspotY="0.502994" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon n.png">
+                        <collision-poly>
+                            <point x="0.170901" y="0.0748503" />
+                            <point x="0.498845" y="0.011976" />
+                            <point x="0.69746" y="0.245509" />
+                            <point x="0.990762" y="0.5" />
+                            <point x="0.806005" y="0.898204" />
+                            <point x="0.498845" y="0.823353" />
+                            <point x="0.200924" y="0.889222" />
+                            <point x="0.00461894" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p2" sid="834632128423889">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762639689847265" speed="5">
+                    <frame duration="1" hotspotX="0.502577" hotspotY="0.501155" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon a-.png">
+                        <collision-poly>
+                            <point x="0.213918" y="0.242494" />
+                            <point x="0.5" y="0.00692841" />
+                            <point x="0.876289" y="0.163972" />
+                            <point x="0.96134" y="0.498845" />
+                            <point x="0.945876" y="0.898383" />
+                            <point x="0.5" y="0.981524" />
+                            <point x="0.0824742" y="0.875289" />
+                            <point x="0.365979" y="0.498845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p3" sid="459769126971004">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763270051433704" speed="5">
+                    <frame duration="1" hotspotX="0.500478" hotspotY="0.5" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon m.png">
+                        <collision-poly>
+                            <point x="0.286533" y="0.234009" />
+                            <point x="0.499522" y="0.103744" />
+                            <point x="0.705826" y="0.24025" />
+                            <point x="0.990449" y="0.5" />
+                            <point x="0.727794" y="0.777691" />
+                            <point x="0.499522" y="0.74883" />
+                            <point x="0.095511" y="0.921997" />
+                            <point x="0.0773639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p4" sid="208761995251210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629181710266893" speed="5">
+                    <frame duration="1" hotspotX="0.502632" hotspotY="0.501155" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon com letra o.png">
+                        <collision-poly>
+                            <point x="0.0868421" y="0.136259" />
+                            <point x="0.5" y="0.0254042" />
+                            <point x="0.763158" y="0.270208" />
+                            <point x="0.802632" y="0.498845" />
+                            <point x="0.934211" y="0.879908" />
+                            <point x="0.5" y="0.995381" />
+                            <point x="0.107895" y="0.845266" />
+                            <point x="0.0131579" y="0.498845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p5" sid="394276198907437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280443614699590" speed="5">
+                    <frame duration="1" hotspotX="0.501155" hotspotY="0.502618" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon r.png">
+                        <collision-poly>
+                            <point x="0.254042" y="0.222513" />
+                            <point x="0.498845" y="0.353403" />
+                            <point x="0.82679" y="0.13089" />
+                            <point x="0.905312" y="0.5" />
+                            <point x="0.896074" y="0.950262" />
+                            <point x="0.498845" y="0.945026" />
+                            <point x="0.288684" y="0.740838" />
+                            <point x="0.124711" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p6" sid="408181177587487">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955463868926439" speed="5">
+                    <frame duration="1" hotspotX="0.501155" hotspotY="0.501299" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon a.png">
+                        <collision-poly>
+                            <point x="0.247113" y="0.215584" />
+                            <point x="0.498845" y="0.158442" />
+                            <point x="0.688222" y="0.288312" />
+                            <point x="0.95612" y="0.498701" />
+                            <point x="0.796767" y="0.833766" />
+                            <point x="0.498845" y="0.677922" />
+                            <point x="0.168591" y="0.872727" />
+                            <point x="0.0438799" y="0.498701" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p7" sid="247418867347580">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="352082887180896" speed="5">
+                    <frame duration="1" hotspotX="0.502604" hotspotY="0.501155" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon c.png">
+                        <collision-poly>
+                            <point x="0.104167" y="0.147806" />
+                            <point x="0.5" y="0.235566" />
+                            <point x="0.557292" y="0.450346" />
+                            <point x="0.986979" y="0.498845" />
+                            <point x="0.84375" y="0.803695" />
+                            <point x="0.5" y="0.875289" />
+                            <point x="0.109375" y="0.847575" />
+                            <point x="0.0338542" y="0.498845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p8" sid="534930073270274">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487757438274004" speed="5">
+                    <frame duration="1" hotspotX="0.502551" hotspotY="0.501155" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon o.png">
+                        <collision-poly>
+                            <point x="0.0994898" y="0.136259" />
+                            <point x="0.841837" y="0.191686" />
+                            <point x="0.890306" y="0.498845" />
+                            <point x="0.568878" y="0.561201" />
+                            <point x="0.5" y="0.709007" />
+                            <point x="0.0637755" y="0.896074" />
+                            <point x="0.0433673" y="0.498845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p9" sid="855120102130251">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492454491174221" speed="5">
+                    <frame duration="1" hotspotX="0.502577" hotspotY="0.501155" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon m-.png">
+                        <collision-poly>
+                            <point x="0.234536" y="0.26097" />
+                            <point x="0.5" y="0.0323326" />
+                            <point x="0.626289" y="0.387991" />
+                            <point x="0.951031" y="0.498845" />
+                            <point x="0.819588" y="0.785219" />
+                            <point x="0.5" y="0.861432" />
+                            <point x="0.110825" y="0.849885" />
+                            <point x="0.0515464" y="0.498845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p10" sid="152662436825340">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552407603991560" speed="5">
+                    <frame duration="1" hotspotX="0.501155" hotspotY="0.502475" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon com letra i.png">
+                        <collision-poly>
+                            <point x="0.281755" y="0.267327" />
+                            <point x="0.498845" y="0.0371287" />
+                            <point x="0.847575" y="0.128713" />
+                            <point x="0.983834" y="0.5" />
+                            <point x="0.916859" y="0.94802" />
+                            <point x="0.498845" y="0.908416" />
+                            <point x="0.249423" y="0.769802" />
+                            <point x="0.103926" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p11" sid="195569826187585">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534806929485443" speed="5">
+                    <frame duration="1" hotspotX="0.501155" hotspotY="0.502688" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon com g.png">
+                        <collision-poly>
+                            <point x="0.122402" y="0.061828" />
+                            <point x="0.498845" y="0.524194" />
+                            <point x="0.838337" y="0.107527" />
+                            <point x="0.877598" y="0.5" />
+                            <point x="0.692841" y="0.725806" />
+                            <point x="0.498845" y="0.873656" />
+                            <point x="0.17321" y="0.88172" />
+                            <point x="0.0161663" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p12" sid="337787561741736">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476674823021376" speed="5">
+                    <frame duration="1" hotspotX="0.501211" hotspotY="0.501155" original-source="C:\Users\amanda.ilucrecio\Desktop\JOGO\assets\pokemon o -.png">
+                        <collision-poly>
+                            <point x="0.118644" y="0.136259" />
+                            <point x="0.498789" y="0.00461894" />
+                            <point x="0.905569" y="0.113164" />
+                            <point x="0.968523" y="0.498845" />
+                            <point x="0.767554" y="0.755196" />
+                            <point x="0.498789" y="0.898383" />
+                            <point x="0.680387" y="0.327945" />
+                            <point x="0.0145278" y="0.498845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Inicio.xml</layout>
+        <layout>Jogo.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Inicio.xml</event-sheet>
+        <event-sheet>Jogo.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="Keyboard" uid="4" />
+        <global-instance type="musica" uid="6">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,17 @@
+
+
+N nidoking
+A alakazam
+M ewtwo
+O Oddish 
+R Rattata
+A arbok
+
+C charmander
+O onix
+M magikarp
+I Ivysaur
+G Golbat
+O Omanyte 
+
+?

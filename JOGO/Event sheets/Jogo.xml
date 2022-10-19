@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Jogo</name>
+    <events>
+        <event-block sid="776953759950401">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="640776991831107" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="151139229951411" type="Jack">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="442816329600079" type="Jack">
+                    <param id="0" name="X">41</param>
+                    <param id="1" name="Y">658</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="280148835502596">
+            <conditions>
+                <condition id="2" name="Key is down" sid="594555495751367" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="251400182656792" type="Jack">
+                    <param id="0" name="Distance">3</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="101689198123134" type="Jack">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="134146456224551" type="Jack">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="472329432589571">
+            <conditions>
+                <condition id="2" name="Key is down" sid="703697130174341" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="618272790527408" type="Jack">
+                    <param id="0" name="Distance">-3</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="804885264221587" type="Jack">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="324143400878270" type="Jack">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="171120573195252">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="202315360010354" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="500142379337314" type="Jack">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="236730689607942">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="319071570303689" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="715546363243011" type="Jack">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
